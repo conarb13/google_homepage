@@ -1,13 +1,14 @@
 <!DOCTYPE html>
   <head>
     <title>Google Search Engine HTML/CSS Clone</title>
-    <link rel="stylesheet" type="text/css" href="reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css\reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css\main.css" media="all">
   </head>
   <body>
     <nav>
       <ul>
-        <li>Gmail</li>
-        <li>Images</li>
+        <li class="navText">Gmail</li>
+        <li class="navText">Images</li>
         <li><img src="img\menu.png" id="menu" ></li>
         <li><button type="button">Sign in</button></li>
       </ul>
@@ -15,21 +16,23 @@
     <section>
       <img src="img\logo.png" id="logo">
       <br>
-      <input type="text">
+      <input type="text" id="search">
       <br>
-      <button type="button">Google Search</button>
-      <button type="button">I'm Feeling Lucky</button>
+      <div id="buttons">
+        <button type="button">Google Search</button>
+        <button type="button">I'm Feeling Lucky</button>
+      </div>
     </section>
     <footer>
-      <ul>
-        <li>Advertising</li>
-        <li>Business</li>
-        <li>About</li>
+      <ul id="left">
+        <li class="left">Advertising</li>
+        <li class="left">Business</li>
+        <li class="left">About</li>
       </ul>
-      <ul>
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Settings</li>
+      <ul id="right">
+        <li class="right">Privacy</li>
+        <li class="right">Terms</li>
+        <li class="right">Settings</li>
       </ul>
     </footer>
   </body>
